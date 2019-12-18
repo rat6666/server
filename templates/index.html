@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CRUD</title>
+  <link rel="stylesheet" href="./templates/static/bootstrap.min.css">
+  <link rel="stylesheet" href="./templates/static/style.css">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <h3>ADD CAR</h3>
+      <form id="addCar" action="">
+        <div class="form-group">
+          <input class="form-control" type="text" name=ID placeholder=ID required>
+          <input class="form-control" type="text" name="model" placeholder="model" required>
+          <input class="form-control" type="text" name="date" placeholder="date" required>
+        </div>
+        <button type="button" class="btn btn-primary form-control" id="submitform">Submit</button>
+        <div>
+        <button class="btn1 btn-primary form-control" id = "fetch" type ="button">Get method(all cars)</button>
+      </div>
+      </form>
+    </div>
+    <div class="col-md-8">
+      <h3>CARS</h3>
+      <table id="carTable" class="table table-striped">
+        <tr>
+          <th>IDmongo</th>
+          <th>ID</th>
+          <th >Model</th>
+          <th >Date</th>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Update Car</h4>
+      </div>
+      <div class="modal-body"></div>
+      <div class="modal-footer"></div>
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+  <script src='./templates/static/sjson.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+<script  src="./templates/static/script.js"></script>
+
+</body>
+</html>
